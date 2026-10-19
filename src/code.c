@@ -193,9 +193,9 @@ bool append_round_txt(const char *filename, double value)
     double result = round(value);
 
     int write_result = fprintf (file, "%.2f\n", result);
-    int clone_result = fclose(file);
+    int close_result = fclose(file);
 
-    return write_result >= 0 && clone_result == 0;
+    return write_result >= 0 && close_result == 0;
 
 }
 /*
@@ -218,9 +218,9 @@ bool append_fmod_txt(const char *filename, double x, double y)
     double result = fmod(x,y);
 
     int write_result = fprintf (file, "%.2f\n", result);
-    int clone_result = fclose(file);
+    int close_result = fclose(file);
 
-    return write_result >= 0 && clone_result == 0;
+    return write_result >= 0 && close_result == 0;
     
 }
 /*
@@ -556,7 +556,7 @@ bool load_bin_value_at(const char *filename, int index, double *out)
     }
 
     size_t read_result = fread(out, sizeof(double), 1, file);
-    int close_result = fclone(file);
+    int close_result = fclose(file);
 
     return read_result == 1 && close_result == 0; 
 }
