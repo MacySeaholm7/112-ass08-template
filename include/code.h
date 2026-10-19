@@ -5,6 +5,7 @@
 
 #ifndef CODE_H 
 #define CODE_H
+#include <stdbool.h>
 /*
  * code.h - Assignment 8: File Access and Math Functions
  *
@@ -81,7 +82,7 @@ bool append_fmod_txt(const char *filename, double x, double y);
 
 int load_txt_values(const char *filename, double *arr, int max_count);
 
-bool clear_file(const char *filename)
+bool clear_file(const char *filename);
 
 /* ========================= PART B: Binary mode ========================= */
 
