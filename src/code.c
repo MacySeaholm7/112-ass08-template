@@ -1,9 +1,7 @@
-//char *AUTHOR_NAME        = (char *) "Your Name";
-//char *AUTHOR_AUTHORSHIP  = (char *) "I acknowledge that I have worked on this
-// assignment independently, except where explicitly noted and referenced.
-// Any collaboration or use of external resources has been properly cited.
-// I am fully aware of the consequences of academic dishonesty and agree to
-// abide by the university's academic integrity policy.";
+// Macy Seaholm 
+// CSCI 112 Fall 2026
+// Programming Assignment #8
+// I declare that I am the author of this work, take full responsibility for it, and have disclosed any material external assistance.
 
 // code.c — student implementation only
 /* * code.c - Implementation file for Lab 8  */
@@ -11,6 +9,8 @@
 
 #include "code.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
 /*
  * code.c - Assignment 8: File Access and Math Functions
@@ -48,7 +48,7 @@
  *    - Close the file and report success only if writing and closing worked.
  */
 // TODO
-
+int create_abs_txt 
 /*
  * 2. create_fabs_txt (returns bool; parameters: filename, double value)
  *    - Same idea as the previous function, but for a double:
